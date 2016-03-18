@@ -1,0 +1,414 @@
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+.resume-field,
+.resume-Complex .fields-container,
+.resume-Relationship .relationship-left,
+.resume-Relationship .relationship-right,
+.resume-Relationship .search-field,
+.resume-Attachment .attachment-url {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		 -o-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------ *\
+	Buttons
+\* ------------------------------------------------------------ */
+
+.resume-button { position: relative; float: left; }
+.resume-button ul { background: #fff; border: 1px solid #e5e5e5; box-shadow: 0 0 3px rgba(0,0,0,.2); margin: 0 0 10px; position: absolute; top: 100%; left: 0; min-width: 100%; display: none; z-index: 9999; }
+.resume-button li { margin: 0; }
+.resume-button li ~ li { border-top: 1px solid #e5e5e5; }
+.resume-button li a { display: block; font-size: 12px; line-height: 18px; padding: 5px 10px; text-decoration: none; white-space: nowrap; }
+.resume-button li a:hover { background: #f8f8f8; }
+
+/* ------------------------------------------------------------ *\
+	Icons
+\* ------------------------------------------------------------ */
+
+.resume-field .icon-button { width: 28px; height: 28px; padding: 0; margin-left: 6px; font-size: 0; line-height: 0; text-align: center; vertical-align: top !important; font-family: inherit; }
+.resume-group-actions a:before,
+.resume-btn-remove-sidebar:before,
+.resume-preview .resume-file-remove,
+.resume-field .icon-button:before { font: normal normal normal 22px/26px 'dashicons'; speak: none; text-transform: none; text-align: center; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; vertical-align: top; }
+.resume-preview .resume-file-remove { font-size: 20px; }
+.resume-Attachment .icon-button { width: auto; padding-right: 10px; font-size: 13px; line-height: 26px; }
+.resume-Attachment .icon-button:before { line-height: 26px; }
+
+.resume-btn-remove-sidebar { position: absolute; top: 10px; right: 33px; padding: 0; margin: 0; font-size: 0; line-height: 0; text-decoration: none; color: #c00; opacity: 0.7; }
+.resume-btn-remove-sidebar:hover { color: #c00; opacity: 1; }
+.resume-btn-remove-sidebar:before { font-size: 16px; line-height: 1.5; }
+
+.resume-group-actions a.resume-btn-remove:before { content: "\f153"; background: #fff; border-radius: 50%; }
+.resume-group-actions a.resume-btn-remove:hover:before { color: #f33; }
+.resume-Attachment .c2_open_media:before { content: "\f497"; }
+.resume-File .c2_open_media:before { content: "\f497"; }
+.resume-Image .c2_open_media:before { content: "\f128"; }
+.resume-Map .address-search-btn:before { content: "\f179"; }
+.button.pickcolor:before { content: "\f309"; }
+.button.resume-datepicker-trigger:before { content: "\f508"; }
+.resume-btn-remove-sidebar:before { content: "\f335"; }
+
+/* ------------------------------------------------------------ *\
+	Containers
+\* ------------------------------------------------------------ */
+
+.resume-container * { margin: 0; padding: 0; }
+.resume-container p { margin: 0; padding: 0 0 3px; font-style: normal; }
+.resume-container h3 { font-size: 17px; margin: 0 0 4px; color: #000; }
+.resume-container label { display: block; padding: 2px 0; color: #000; }
+.resume-container .resume-button { margin-top: 15px; }
+.resume-container .help-text,
+.resume-container .description { display: block; padding-top: 3px; padding-bottom: 1px; font-style: italic; }
+
+.resume-container-Widget .collapsed > .fields-container,
+.resume-fields-collection .collapsed > .fields-container { display: none; }
+.resume-fields-collection  { padding-bottom: 20px; }
+
+.resume-fields-row > .resume-field { min-width: 100%; }
+
+.resume-grid .resume-field + .resume-field,
+.resume-grid .resume-field + .resume-fields-row,
+.resume-grid .resume-fields-row + .resume-field { border-top: 1px solid #d9d9d9; }
+
+/* Table layout */
+.resume-table-row > td { padding: 0; }
+.resume-table-row .container-holder > .resume-tabs > .resume-tabs-nav { background: transparent; }
+
+/* Tabs */
+.resume-tabs { margin-top: 5px; }
+.resume-tabs .resume-tab { display: none; }
+.resume-tabs .resume-tab.active { display: block; }
+.resume-tabs .resume-tabs-body { margin-top: 1px }
+
+.resume-tabs-nav { border-bottom: solid 1px #ddd; margin: -5px 0px -1px 0px; padding: 15px 0 0 10px; background: #F9F9F9; }
+.resume-tabs-nav li { display: inline-block; position: relative; top: 1px; margin-bottom: 0;}
+.resume-tabs-nav li a {display: inline-block; margin: 0 4px 0px 0; padding: 6px 10px; border: solid 1px #ccc; background: #E4E4E4; color: #000; font-size: 14px; line-height: 24px; text-decoration: none; font-weight: bold; }
+.resume-tabs-nav li.active a { text-decoration: none; background: white; margin-bottom: -1px; border-bottom-color: #fff; }
+.resume-tabs-nav li.active a:focus, .resume-tabs-nav li.active a:active { box-shadow: none; }
+.resume-tabs-nav li a:hover { background: white; }
+
+/* Error State */
+.resume-container .resume-highlight { background: #fff0ee !important; -webkit-transition: background 2s; transition: background 2s;}
+.resume-container .resume-highlight > .resume-error { display: block; }
+.resume-container .resume-error { display: none; padding-top: 5px; color: #c31d1d }
+.resume-container .help-text + .resume-error { padding-top: 0; }
+
+/* ------------------------------------------------------------ *\
+	Container - Custom Fields, Theme Options
+\* ------------------------------------------------------------ */
+
+#poststuff .resume-box,
+#poststuff .spinner.disabled { display: none; }
+#poststuff .resume-box .inside { margin: 0; padding: 0; }
+
+.resume-box .resume-fields-collection { padding-bottom: 0; }
+
+.resume-theme-options #post-body.columns-2 #postbox-container-1.fixed { position: fixed; right: 0; margin-right: 20px; }
+
+/* ------------------------------------------------------------ *\
+	Container - Terms, Users
+\* ------------------------------------------------------------ */
+
+.resume-term-container { width: 95%; }
+.resume-term-container .resume-field > label { color: #23282d; }
+
+/* Add Term */
+.add-term-container .resume-container { margin-left: -10px; margin-right: -10px; }
+.add-term-container .resume-field > label { font-weight: normal; }
+.add-term-container .resume-field .help-text { font-size: 13px; color: #666; }
+.add-term-container > .resume-tabs > .resume-tabs-nav { background: transparent; }
+
+/* Users */
+.resume-user-container { max-width: 800px; }
+.resume-user-container label { width: 200px; }
+#profile-page .resume-user-container textarea { width: 100%; max-width: none; }
+
+/* ------------------------------------------------------------ *\
+	Container - Widgets
+\* ------------------------------------------------------------ */
+
+.resume-container-Widget { margin: 0 -15px 15px -15px; width: auto; border-bottom: 1px solid #d9d9d9; }
+.resume-container-Widget > .resume-field:first-child { margin-top: -1px; }
+
+/* ------------------------------------------------------------ *\
+	Fields
+\* ------------------------------------------------------------ */
+
+.resume-field { padding: 10px; margin: 0; }
+.resume-field .help-text { padding-top: 3px; font-style: italic; font-size: 14px; }
+
+.resume-field label { padding-bottom: 6px; font-weight: bold; }
+.resume-field input[type="text"],
+.resume-field textarea { display: block; padding: 4px 5px 3px; width: 100%; resize: vertical; }
+.resume-field select { width: 100%; }
+.resume-field .multiple-groups { margin-top: 6px; }
+.resume-field .resume-required { color: #aa0000; }
+.resume-field .input-with-button { position: relative; padding-right: 38px; }
+.resume-field .input-with-button .button { position: absolute; top: 0; right: 0; }
+
+/* Set and Radio list */
+.resume-field p label input[type="checkbox"],
+.resume-field p input[type="checkbox"],
+.resume-field p input[type="radio"],
+.resume-field > input[type="checkbox"] { float: left; margin: 2px 8px 0 0; }
+.resume-field .resume-radio-list,
+.resume-field .resume-set-list { padding-top: 6px; }
+.resume-field .resume-radio-list li,
+.resume-field .resume-set-list p { position: relative; overflow: hidden; padding: 0 0 9px; margin: 0; }
+.resume-field .resume-set-list label,
+.resume-field .resume-radio-list label { font-weight: normal; padding: 0; }
+.resume-field .resume-description:after { content: ''; display: block; clear: both; width: 100%; }
+
+/* ------------------------------------------------------------ *\
+	Field - Relationship
+\* ------------------------------------------------------------ */
+
+.resume-Relationship .relationship-container { clear: both; overflow: hidden; margin: 3px -10px 0; }
+.resume-Relationship .relationship-container .relationship-right label { display: none; }
+.resume-Relationship .relationship-left,
+.resume-Relationship .relationship-right { width: 50%; padding: 0 10px; border: 0; margin: 0; }
+.resume-Relationship .relationship-left { float: left; }
+.resume-Relationship .relationship-right { float: right; }
+
+.resume-Relationship ul { position: relative; border: 1px solid #ddd; background: #fff; }
+.resume-Relationship ul li { position: relative; display: block; padding: 0; margin: 0; background: #fff; }
+.resume-Relationship ul li a { position: relative; display: block; padding: 5px 6px; border-bottom: 1px solid #f5f5f5; text-decoration: none; }
+.resume-Relationship ul li a span { position: absolute; top: 7px; right: 5px; display: none; width: 15px; height: 15px; cursor: pointer; }
+.resume-Relationship ul li a span:before { display: inline-block; -webkit-font-smoothing: antialiased; font: normal 15px/1 'dashicons'; vertical-align: top; color: #666; }
+.resume-Relationship .relationship-right li a span:before { color: #c00;  }
+.resume-Relationship ul li a em { float: right; margin-right: 20px; font-size: 11px; font-style: normal; text-transform: uppercase; color: #999; }
+.resume-Relationship ul li a i.trashed { display: inline-block; margin: 0 3px; }
+.resume-Relationship ul li a i.trashed:before { font: normal 15px/19px 'dashicons'; content: "\f182"; display: inline-block; color: #666; vertical-align: top; }
+.resume-Relationship ul li a:hover { background-color: #eaeff5; color: #333; }
+.resume-Relationship ul li a:hover span { display: block; }
+.resume-Relationship .search-field { width: 100%; padding: 0; border: 1px solid #ddd; border-spacing: 0; margin: 0; }
+.resume-Relationship .search-field input { width: 100%; padding: 5px 9px !important; border: 0; margin: 0; font-size: 13px; line-height: 18px; border-radius: 0; font-family: sans-serif; }
+.resume-Relationship .mobile-handle { display: none; }
+.mobile .resume-Relationship ul li a { padding: 7px; }
+.touchscreen .resume-Relationship .relationship-right .mobile-handle:before { content: '\f333'; font-family: 'dashicons', sans-serif; font-size: 16px; line-height: 1.88; }
+.touchscreen .resume-Relationship .relationship-right .mobile-handle { position: absolute; top: 0; left: 0; z-index: 30; display: block; width: 30px; height: 100%; text-align: center; }
+.touchscreen .resume-Relationship .relationship-right a { padding-left: 30px; }
+
+.resume-Relationship .relationship-left ul { overflow: auto; display: block; height: 162px; border-top: 0 none; margin: 0; -webkit-overflow-scrolling: touch; }
+.resume-Relationship .relationship-left ul a span:before { content: "\f502"; }
+
+.resume-Relationship .relationship-right label { display: none; }
+.resume-Relationship .relationship-right ul { overflow: auto; height: 188px; min-height: 188px; margin: 0; -webkit-overflow-scrolling: touch; }
+.resume-Relationship .relationship-right ul a { cursor: move; }
+.resume-Relationship .relationship-right ul a span:before { content: "\f153"; }
+.resume-Relationship .relationship-right ul.ui-sortable { touch-action: auto; }
+
+.resume-Relationship .relationship-list li.inactive a { background-color: #f5f5f5; opacity: 0.6; cursor: default; }
+.resume-Relationship .relationship-list li.inactive a span { display: none; }
+.resume-Relationship .relationship-list li.load-more { text-align: center; }
+.resume-Relationship .relationship-list li.load-more .spinner { float: none; padding: 3px; margin: 0 auto; background-position: center center; }
+.resume-Relationship.loading .relationship-list li.load-more .spinner { display: block; }
+
+/* ------------------------------------------------------------ *\
+	Field - File, Image, Attachment
+\* ------------------------------------------------------------ */
+
+.resume-File .resume-view_file { margin: 6px 0 0; }
+
+.resume-attachment-preview { width: 150px; position: relative; float: left; padding: 5px 0 10px; margin: 0; color: #464646; list-style: none; text-align: center; }
+.resume-Image .resume-attachment-preview { padding-top: 10px; padding-bottom: 4px; }
+
+.resume-preview { position: relative; -webkit-box-shadow: inset 0 0 15px rgba( 0, 0, 0, 0.1 ), inset 0 0 0 1px rgba( 0, 0, 0, 0.05 ); box-shadow: inset 0 0 15px rgba( 0, 0, 0, 0.1 ), inset 0 0 0 1px rgba( 0, 0, 0, 0.05 ); background: #eee; }
+.resume-preview:before { content: ''; display: block; padding-top: 100%; }
+.resume-preview .thumbnail { position: absolute; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden; opacity: 1; -webkit-transition: opacity .1s; transition: opacity .1s; }
+.resume-preview .thumbnail:after { content: ''; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; -webkit-box-shadow: inset 0 0 0 1px rgba( 0, 0, 0, 0.1 ); box-shadow: inset 0 0 0 1px rgba( 0, 0, 0, 0.1 ); overflow: hidden; }
+.resume-preview .thumbnail .centered { position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-transform: translate( 50%, 50% ); -ms-transform: translate(50%,50%); transform: translate( 50%, 50% ); }
+.resume-preview .thumbnail .centered img { position: absolute; top: 0; left: 0; max-width: 100%; -webkit-transform: translate( -50%, -50% ); -ms-transform: translate(-50%,-50%); transform: translate( -50%, -50% ); }
+
+.resume-preview .resume-file-remove { position: absolute; top: -10px; right: -10px; cursor: pointer; }
+.resume-preview .resume-file-remove:before { content: "\f153"; background: #fff; border-radius: 50%; color: #C00; }
+
+.resume-Attachment .input-with-button .button { position: relative; margin: 0 0 6px; }
+.resume-Attachment .attachment-url { overflow: hidden; clear: both; padding: 3px 5px; border: 1px solid #ddd; margin: 0 0 4px; font-size: 14px; line-height: 19px; word-break: break-all; background: #f6f6f6; box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1); }
+
+/* ------------------------------------------------------------ *\
+	Field - RichText
+\* ------------------------------------------------------------ */
+
+.resume-RichText textarea { border-width: 0; }
+.resume-RichText .description { padding-top: 5px; }
+.resume-RichText .wp-editor-tools { float: left; }
+.resume-RichText .resume-wysiwyg { margin-top: 5px; }
+.resume-RichText .wp-editor-tabs { margin-top: 1px;  }
+
+/* ------------------------------------------------------------ *\
+	Field - HTML
+\* ------------------------------------------------------------ */
+
+.resume-HTML h1,
+.resume-HTML h2,
+.resume-HTML h3,
+.resume-HTML h4,
+.resume-HTML h5,
+.resume-HTML h6 { margin-bottom: 0.8em; }
+.resume-HTML blockquote { font-family: Georgia, serif; border-left: 2px solid #000; padding-left: 15px; }
+.resume-HTML ul,
+.resume-HTML ol { margin-left: 20px; margin-bottom: 18px; }
+.resume-HTML li { margin-bottom: 2px; }
+.resume-HTML > label { display: none; }
+.resume-HTML :last-child { margin-bottom: 0; }
+.resume-HTML .description { padding-bottom: 4px; }
+
+/* ------------------------------------------------------------ *\
+	Field - Color Picker
+\* ------------------------------------------------------------ */
+
+.resume-Color input.resume-color.error { background-color: #e74444; }
+.resume-Color input.resume-color { -webkit-transition: background-color 0.5s ease; transition: background-color 0.5s ease; }
+.resume-Color .button.pickcolor { -webkit-box-shadow: none; box-shadow: none; }
+.resume-Color .button.has-color:before { content:""; }
+.resume-Color .iris-picker { position: absolute; top: 100%; left: 0; z-index: 10; border: 1px solid #e5e5e5; box-shadow: 0 0 5px rgba(0,0,0,.2); }
+
+/* ------------------------------------------------------------ *\
+	Field - Map
+\* ------------------------------------------------------------ */
+
+.resume-Map .resume-map-search p { margin-top: 0; }
+.resume-map-canvas { height: 300px; border: 1px solid #ddd; margin: 10px 0 4px; }
+
+/* ------------------------------------------------------------ *\
+	Field - Separator
+\* ------------------------------------------------------------ */
+
+.resume-Separator { position: relative; padding: 18px 15px; background: #fcfcfc; }
+.resume-Separator .help-text { padding-top: 5px; }
+.resume-Separator label { display: none; }
+.resume-Separator h3,
+#poststuff .resume-Separator h3 { padding: 0; font-size: 17px; margin: 0; }
+
+.add-term-container .resume-container > .resume-Separator,
+.resume-table-row .resume-container > .resume-Separator { margin: 10px; min-width: 0; }
+
+.add-term-container .resume-container > .resume-Separator,
+.resume-table-row .resume-container > .resume-Separator { border: 1px solid #d9d9d9; }
+
+/* ------------------------------------------------------------ *\
+	Field - Complex
+\* ------------------------------------------------------------ */
+
+.resume-Complex .resume-row .resume-button { float: none; }
+.resume-Complex .resume-actions .resume-button { display: inline-block; float: none; }
+.resume-Complex .description { padding-top: 10px; margin-top: 0; }
+.resume-Complex .help-text { clear: both; padding-top: 10px; margin-top: 0; }
+
+.resume-Complex .resume-field label { font-weight: bold; }
+
+/* Complex Groups */
+.resume-group-row { position: relative; }
+.resume-group-row + .resume-group-row { margin-top: 14px; }
+.resume-group-row.ui-sortable-helper:first-child + .ui-placeholder-highlight { margin-top: 0; }
+.resume-group-row .resume-row { padding: 10px 12px 12px; }
+.resume-group-row .resume-row.resume-group-row { padding: 0; }
+
+.resume-group-row .resume-drag-handle { position: relative; background: #f7f6f6; border: 1px solid #d9d9d9; padding: 8px 10px; cursor: move; line-height: 18px; }
+.resume-group-row .resume-drag-handle .group-number { position: absolute; border-right: 1px solid #d9d9d9; top: 0; height: 100%; width: 40px; line-height: 34px; margin-left: -10px; text-align: center; font-weight: bold; }
+.resume-group-row .resume-drag-handle .group-name { display: inline-block; margin-left: 45px; font-weight: bold; }
+.resume-group-row.removed > .resume-drag-handle { background: #e74444 !important; transition: all 0.5s ease; }
+
+.resume-group-row .fields-container { border-width: 0 1px 1px; border-style: solid; border-color: #d9d9d9; }
+
+.resume-groups-holder .ui-placeholder-highlight { display: block; background: #fff; border: 1px dashed #bbb; height: 34px; margin-bottom: 14px; }
+
+.resume-groups-holder > .resume-group-row > .fields-container > div { background: #f7f6f6; }
+.resume-Complex > .field-holder.max-reached > .resume-subcontainer > .resume-groups-holder > .resume-group-row > .resume-group-actions .resume-btn-duplicate { display: none; }
+.resume-Complex.even > .field-holder > .resume-subcontainer > .resume-groups-holder > .resume-group-row > .fields-container > div,
+.resume-Complex.even > .field-holder > .resume-subcontainer > .resume-groups-holder > .resume-group-row > .resume-drag-handle { background: #fff; }
+
+.resume-group-actions { position: absolute; top: 0; right: 0; padding: 8px 10px; }
+.resume-group-actions a { position: relative; display: inline-block; width: 19px; height: 19px; margin: 0 3px; vertical-align: middle; color: transparent; font-size: 0; text-indent: -5000em; }
+.resume-group-actions a:focus,
+.resume-group-actions a:active { outline: none !important; box-shadow: none; }
+.resume-group-actions a:before { width: 19px; height: 19px; font-size: 19px; line-height: 1; text-align: center; color: #000; }
+.resume-group-actions a.resume-btn-duplicate:before { content: "\f105"; }
+.resume-group-actions a.resume-btn-duplicate:hover:before { color: #016edd; }
+.resume-group-actions a.resume-btn-collapse:before { content: "\f142"; }
+.resume-group-actions a.resume-btn-remove:hover:before  { color: #c00; }
+.resume-group-actions a.resume-btn-collapse:hover:before { color: #008a2d; }
+.resume-group-row.collapsed .resume-group-actions a.resume-btn-collapse {
+	-webkit-transform: rotate(180deg) translateX(-1px) translateY(-2px);
+	   -moz-transform: rotate(180deg) translateX(-1px) translateY(-2px);
+		-ms-transform: rotate(180deg) translateX(-1px) translateY(-2px);
+		 -o-transform: rotate(180deg) translateX(-1px) translateY(-2px);
+			transform: rotate(180deg) translateX(-1px) translateY(-2px);
+}
+
+
+/* ------------------------------------------------------------ *\
+	Media 
+\* ------------------------------------------------------------ */
+
+/* Desktop only */
+@media screen and (min-width: 1100px) {
+	/* Field Rows */
+	.resume-grid .resume-fields-row:first-child { border-top: 0; }
+	.resume-grid .resume-fields-row { display: table; width: 100%; border-top: 1px solid #d9d9d9; }
+	.resume-grid .resume-fields-row > .resume-field { display: table-cell; min-width: 0; vertical-align: top; border: 0; }
+	.resume-grid .resume-fields-row > .resume-field + .resume-field { border-left: 1px solid #d9d9d9; }
+
+	/* Complex Groups - List */
+	.resume-Complex .layout-list > .resume-group-row > .fields-container { float: none; clear: none; display: table; table-layout: fixed; border-collapse: collapse; width: 100%; }
+	.resume-Complex .layout-list > .resume-group-row > .fields-container > .resume-row { float: none; clear: none; display: table-cell; width: auto; border-top: 0; border-left: 1px solid #ddd; vertical-align: top; }
+	.resume-Complex .layout-list > .resume-group-row.collapsed > .fields-container { display: none; }
+}
+
+/* Tablets and Desktop */
+@media screen and (min-width: 783px) {
+	.resume-table-row .resume-container > .resume-fields-row > .resume-field > label,
+	.resume-table-row .resume-container > .resume-field > label { position: absolute; left: 0; }
+}
+
+/* Phones */
+@media screen and (max-width: 850px) {
+	.resume-theme-options #post-body.columns-2 #postbox-container-1.fixed { position: static; }
+}
+
+@media screen and (max-width: 782px) {
+	.edit-term-container { width: auto; }
+	.resume-table-row .resume-container { margin-left: -10px; }
+
+	.resume-field .icon-button { min-width: 40px; height: 40px; }
+
+	.resume-preview .resume-file-remove,
+	.resume-field .icon-button:before { font-size: 32px; line-height: 40px; }
+
+	.resume-field input[type="text"],
+	.resume-field textarea,
+	.resume-field select { padding: 7px 10px; font-size: 16px; line-height: 1.5; }
+
+	.resume-container .resume-field .button span { margin: -3px 0 -1px 4px !important; vertical-align: middle; }
+	.resume-container .resume-Separator { margin-left: 0; margin-right: 0; }
+
+	.resume-Attachment .icon-button { font-size: 14px; line-height: 40px; }
+
+	.resume-field .input-with-button { padding-right: 48px; }
+
+	.add-term-container .resume-Relationship .relationship-container { margin: 3px 0 0; }
+	.add-term-container .resume-Relationship .relationship-left,
+	.add-term-container .resume-Relationship .relationship-right { float: none; display: block; width: auto; padding: 0 0 5px; }
+
+	.resume-radio-list label,
+	.resume-set-list label { padding: 6px 0; line-height: 2.3; }
+
+	.resume-Relationship ul { font-size: 15px; }
+
+	.resume-user-container label { width: auto; }
+}
+
+@media screen and (max-width: 600px) {
+	.resume-tabs.resume-tabs-stacked .resume-tabs-nav li { display: block; margin-right: 8px; }
+	.resume-tabs.resume-tabs-stacked .resume-tabs-nav li a { display: block; }
+
+	.resume-Relationship .relationship-container { margin: 3px 0 0; }
+	.resume-Relationship .relationship-left,
+	.resume-Relationship .relationship-right { float: none; display: block; width: auto; padding: 0 0 10px; }
+}

@@ -1,0 +1,11 @@
+/* General */
+#ResumeBuilder { border:none; padding-bottom:30px; background:#fff; }
+#ResumeBuilder.closed { padding:0; }
+
+#ResumeBuilder .resume-Separator { background:#ddd; }
+#ResumeBuilder .resume-field { padding:25px; }
+
+/* Top Bar */
+#ResumeBuilder .hndle { background:#EA6148; color:#fff; padding:15px 16px 16px; font-size:19px; font-weight:300; }
+#ResumeBuilder .handlediv { color:#fff; }
+#ResumeBuilder .handlediv:before { font-size:25px; padding:13px 0; }
